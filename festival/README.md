@@ -20,20 +20,20 @@
 
 ## 使った文法・技術
 
-** CompatibilityCalculator.swift **
+**CompatibilityCalculator.swift**
 
-｀static func calculate(
+｀｀｀static func calculate(
         first: Participant,
         second: Participant
-    ) -> CompatibilityResult? {｀
+    ) -> CompatibilityResult? {｀｀｀
     calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
-｀return CompatibilityResult(
+｀｀｀return CompatibilityResult(
             totalScore: totalScore,
             mbtiScore: mbtiScore,
             interestScore: interestScore,
             sharedInterests: sharedInterests
-        )｀
+        )｀｀｀
 ４つのスコアをまとめて返すためのコード。
 
 （例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
