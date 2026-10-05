@@ -28,6 +28,7 @@ static func calculate(
         second: Participant
     ) -> CompatibilityResult? 
     ```
+
     calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
 ```swift
@@ -38,6 +39,7 @@ return CompatibilityResult(
             sharedInterests: sharedInterests
         )
         ```
+
 ４つのスコアをまとめて返すためのコード。
 
 （例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
