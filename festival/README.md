@@ -40,7 +40,7 @@ return CompatibilityResult(
         )
 ```
 
-４つのスコアをまとめて返すためのコード。
+相性結果をまとめて返すためのコード。
 
 （例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
 
