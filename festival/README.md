@@ -28,7 +28,7 @@ static func calculate(
         second: Participant
     ) -> CompatibilityResult? 
 ```
-    calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
+calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
 
 ```swift
@@ -39,8 +39,16 @@ return CompatibilityResult(
             sharedInterests: sharedInterests
         )
 ```
-
 相性結果をまとめて返すためのコード。
+
+```var sharedInterests: [String] = []```
+共通する部分を追加する配列。複数保持。
+
+```if firstMBTI[0] == secondMBTI[0] {
+            mbtiScore += 18
+        }```
+もしスコア（０の配列の中身）が一緒なら得点追加。
+
 
 （例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
 
