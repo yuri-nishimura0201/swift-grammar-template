@@ -22,14 +22,16 @@
 
 **CompatibilityCalculator.swift**
 
-｀｀｀static func calculate(
+｀｀｀swift
+static func calculate(
         first: Participant,
         second: Participant
-    ) -> CompatibilityResult? {
+    ) -> CompatibilityResult? 
     ｀｀｀
     calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
-｀｀｀return CompatibilityResult(
+｀｀｀swift
+return CompatibilityResult(
             totalScore: totalScore,
             mbtiScore: mbtiScore,
             interestScore: interestScore,
