@@ -55,8 +55,12 @@ if firstMBTI[0] == secondMBTI[0] {
 ```
 もしスコア（０の配列の中身）が一緒なら得点追加。
 
+```swift
+for interest in first.interests {
+```
+一人目が選んだ配列から一個ずつ確認する
 
-（例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
+（```swift```
 
 ## 生成AIの使い方（どの場面で、どう使ったか）
 
