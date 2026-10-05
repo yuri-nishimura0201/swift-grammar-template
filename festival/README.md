@@ -27,7 +27,7 @@ static func calculate(
         first: Participant,
         second: Participant
     ) -> CompatibilityResult? 
-    ```
+```
 
     calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
@@ -38,7 +38,7 @@ return CompatibilityResult(
             interestScore: interestScore,
             sharedInterests: sharedInterests
         )
-        ```
+```
 
 ４つのスコアをまとめて返すためのコード。
 
