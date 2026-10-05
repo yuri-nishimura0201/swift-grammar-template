@@ -28,8 +28,8 @@ static func calculate(
         second: Participant
     ) -> CompatibilityResult? 
 ```
-
     calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
+
 
 ```swift
 return CompatibilityResult(
