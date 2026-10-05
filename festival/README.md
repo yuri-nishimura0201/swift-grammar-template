@@ -41,12 +41,18 @@ return CompatibilityResult(
 ```
 相性結果をまとめて返すためのコード。
 
-```var sharedInterests: [String] = []```
+
+```swift
+var sharedInterests: [String] = []
+```
 共通する部分を追加する配列。複数保持。
 
-```if firstMBTI[0] == secondMBTI[0] {
+
+```swift
+if firstMBTI[0] == secondMBTI[0] {
             mbtiScore += 18
-        }```
+        }
+```
 もしスコア（０の配列の中身）が一緒なら得点追加。
 
 
