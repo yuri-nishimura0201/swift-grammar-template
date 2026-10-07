@@ -29,6 +29,7 @@ static func calculate(
     ) -> CompatibilityResult? 
 ```
 ⇧calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
+？をつけてoptional(値が入ってるか空のどちらかを示す)にしている
 
 
 ```swift
@@ -59,6 +60,48 @@ if firstMBTI[0] == secondMBTI[0] {
 for interest in first.interests {
 ```
 ⇧一人目が選んだ配列から一個ずつ確認する
+
+```swift
+var interestScore = sharedInterests.count * 10
+
+if interestScore > 30 {
+    interestScore = 30
+}
+```
+⇧カウントで配列の要素数を取得。一個✖️１０点。
+
+
+**MBTICalculator.swift**
+
+```swift
+if answers.count != questions.count {
+    return nil
+}
+```
+⇧全問解答しているかの確認のためのコード。
+カウントで数確認。!=で同じか否かの確認ー＞違かったらnil
+
+```swift
+for answer in answers {
+    // 回答を1つずつ処理
+}
+```
+⇧フォーインで解答を一つずつ取り出し、順番に確認。
+
+```swift
+if answer == "A" {
+    // A側に加点
+} else if answer == "B" {
+    // B側に加点
+}
+```
+⇧条件分岐。AならAにBならBに。
+
+```swift
+return mbti
+```
+⇧４文字の英語（mbti）を返す。
+
 
 （```swift```
 
