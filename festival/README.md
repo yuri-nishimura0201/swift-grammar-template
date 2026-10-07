@@ -114,8 +114,7 @@ if firstMBTI[1] == secondMBTI[1] { mbtiScore += 18 }
 if firstMBTI[2] == secondMBTI[2] { mbtiScore += 17 }
 if firstMBTI[3] == secondMBTI[3] { mbtiScore += 17 }
 ```
-好きなことからの配点を加味してMBTIでは70点を出したかった。
-　　->18 + 18 + 17 + 17 = 70点にして同じ英語の部分にそれぞれ加算
+好きなことからの配点を加味してMBTIでは70点を出したかった。->18 + 18 + 17 + 17 = 70点にして同じ英語の部分にそれぞれ加算
 
 **結果をまとめる部分**
 ```swift
@@ -126,11 +125,8 @@ return CompatibilityResult(
     sharedInterests: sharedInterests
 )
 ```
-どのように結果を返したらいいのか
-　　->CompatibilityResultという箱に結果を入れている。リターンによってcalculate()を呼び出した側に返す。リザルトによって欲しい情報をそれぞれ取り出す。
-
-なぜ総合点だけ返さないのか
-　　->MEETIではなぜ80点だったのかも表示したい。相性計算で得られた4つの情報をまとめて返すようにした。
+どのように結果を返したらいいのか->CompatibilityResultという箱に結果を入れている。リターンによってcalculate()を呼び出した側に返す。リザルトによって欲しい情報をそれぞれ取り出す。
+なぜ総合点だけ返さないのか->MEETIではなぜ80点だったのかも表示したい。相性計算で得られた4つの情報をまとめて返すようにした。
 
   
 
