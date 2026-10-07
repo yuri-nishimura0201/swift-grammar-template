@@ -28,7 +28,7 @@ static func calculate(
         second: Participant
     ) -> CompatibilityResult? 
 ```
-calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
+⇧calculateを実行したら、最後にCompatibilityResult または nil を返すコード。
 
 
 ```swift
@@ -39,13 +39,13 @@ return CompatibilityResult(
             sharedInterests: sharedInterests
         )
 ```
-相性結果をまとめて返すためのコード。
+⇧相性結果をまとめて返すためのコード。
 
 
 ```swift
 var sharedInterests: [String] = []
 ```
-共通する部分を追加する配列。複数保持。
+⇧共通する部分を追加する配列。複数保持。
 
 
 ```swift
@@ -53,12 +53,12 @@ if firstMBTI[0] == secondMBTI[0] {
             mbtiScore += 18
         }
 ```
-もしスコア（０の配列の中身）が一緒なら得点追加。
+⇧もしスコア（０の配列の中身）が一緒なら得点追加。
 
 ```swift
 for interest in first.interests {
 ```
-一人目が選んだ配列から一個ずつ確認する
+⇧一人目が選んだ配列から一個ずつ確認する
 
 （```swift```
 
