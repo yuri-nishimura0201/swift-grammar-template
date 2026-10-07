@@ -3,7 +3,7 @@
 > **チーム名：**　MEETI
 > **チーム：** 西村優里、河野結奈（リーダー）、中島多笑
 > **AI利用レベル：** 2（生成コード可）
-> **最終更新：** 2026-10-05
+> **最終更新：** 2026-10-08
 
 > 💡 制作の進め方は担任の先生から案内があります。このファイルの項目は、担任の先生の指示で増えることがあります。
 
@@ -106,6 +106,33 @@ return mbti
 （```swift```
 
 ## 生成AIの使い方（どの場面で、どう使ったか）
+
+**MBTIの配点について**
+```swift
+if firstMBTI[0] == secondMBTI[0] { mbtiScore += 18 }
+if firstMBTI[1] == secondMBTI[1] { mbtiScore += 18 }
+if firstMBTI[2] == secondMBTI[2] { mbtiScore += 17 }
+if firstMBTI[3] == secondMBTI[3] { mbtiScore += 17 }
+```
+好きなことからの配点を加味してMBTIでは70点を出したかった。
+　　->18 + 18 + 17 + 17 = 70点にして同じ英語の部分にそれぞれ加算
+
+**結果をまとめる部分**
+```swift
+return CompatibilityResult(
+    totalScore: totalScore,
+    mbtiScore: mbtiScore,
+    interestScore: interestScore,
+    sharedInterests: sharedInterests
+)
+```
+どのように結果を返したらいいのか
+　　->CompatibilityResultという箱に結果を入れている。リターンによってcalculate()を呼び出した側に返す。リザルトによって欲しい情報をそれぞれ取り出す。
+
+なぜ総合点だけ返さないのか
+　　->MEETIではなぜ80点だったのかも表示したい。相性計算で得られた4つの情報をまとめて返すようにした。
+
+  
 
 （例：画面の骨組みは ChatGPT に書いてもらった。削除ボタンが効かなかったので、原因を質問して直した。）
 
