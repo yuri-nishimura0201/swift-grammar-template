@@ -140,6 +140,14 @@ for interest in first.interests {
 ```
 趣味を比較して一致しているものだけを取り出したい。かつ結果画面にも表示。->for-inで1人目の趣味を順番に確認、.contains()で2人目にも同じ趣味があるか確認する。.append()で一致した趣味を配列に追加する。
 
+```swift
+for i in 0..<answers.count {
+    let answer = answers[i]
+    let question = mbtiQuestions[i]
+}
+```
+回答と質問を対応させて処理する方法。回答によって加点するMBTIの指標が異なるため、質問データも同時に取得する必要があった。->0..<answers.countで0から回答数の1つ前まで繰り返し、answerで回答を取得。mbtiQuestions[i]で同じ番号の質問を取得。質問と回答を対応させることで、どの指標に加点するか判断できる。
+
 
 
 ## 展示で工夫した点
